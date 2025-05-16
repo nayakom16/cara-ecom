@@ -1,0 +1,141 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+    background-color: #E3E6F3;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.103);
+    z-index: 222;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+}
+
+
+
+.nav ul .navli {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgb(0, 128, 119);
+    padding: 8px 9px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
+}
+
+
+.nav ul .navli:hover,.nav ul .navli.active{
+    color: rgb(0, 128, 119);
+}
+
+.nav ul .navli::after{
+    content: "";
+    width: 70%;
+    background-color: rgb(0, 128, 119);
+    height: 2px;
+    transform: scaleX(0);
+    background-color: rgb(0, 128, 119);
+    position: absolute;
+    bottom: -8px;
+    left: 2px;
+    transform-origin: left;
+    transition: transform 0.2s ease-out;
+}
+
+.nav ul .navli:hover::after,.nav ul .navli.active::after{
+    transform: scaleX(.9);
+}
+
+
+.navbar-cart{
+    position: relative;
+}
+.cart-dot{
+    width:8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 100px;
+    position: absolute;
+    right: 7px;
+    top: 1px;
+}
+
+.mobile ,.navbar-cross{
+    display: none;
+}
+
+
+@media (max-width:420px){
+    #navbar{
+        
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        /* right: 0px; */
+        padding: 50px;
+        justify-content: start;
+        align-items: flex-start;
+        width: 40%;
+        height: 100vh;
+        /* background-color: whitesmoke; */
+        backdrop-filter: blur(16px);
+        transition: 0.5s;
+        z-index: 111;
+    }
+
+    .cart-icon-special{
+        display: none;
+    }
+
+    .cart-icon{
+        font-size: 15px;
+    }
+   
+    .mobile {
+      display: block;  
+    }
+
+    .mobile-icon{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #navbar .navli {
+        color: rgb(0, 128, 119);
+        /* margin:  20px 0;   */
+        list-style: none;
+    }
+    
+
+    .navbar-cross{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .header{
+        padding: 25px 40px;
+    }
+}

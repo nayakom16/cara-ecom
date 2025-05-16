@@ -1,0 +1,36 @@
+.feature-product-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 100px;
+}
+
+.feature-product h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.feature-product p{
+    text-align: center;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.355);
+}
+
+
+@media (max-width:420px) {
+    .featured-products ,.feature-product-container{
+        padding: 20px;
+        justify-content: center;
+    }
+    .featured-products h1,.arrival h1{
+        font-size: 30px;
+        margin-bottom: 0px;
+        
+    }
+    .featured-products p,.arrival p{
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,34 @@
+.hero-shop{
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    align-content: center;
+    background-image: url("b1.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    margin-top: 90px;
+}
+
+.hero-shop h1{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.hero-shop p{
+    font-size: 10px;
+}
+
+@media (max-width: 420px){
+
+    .hero-shop{
+        height: 30vh;
+    }
+    .hero-shop h1{
+        font-size: 20px;
+    }
+    .hero-shop p{
+        font-size: 10px;
+    }
+    
+}
