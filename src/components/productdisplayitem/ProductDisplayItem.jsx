@@ -5,11 +5,7 @@ import './ProductDisplayItem.css'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { ProductContext } from '../../context/ProductContext';
 import { useNavigate } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
+
 
 
 const ProductDisplayItem = ({id, name, price, img, category, brand} ) => {
